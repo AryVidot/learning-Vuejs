@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+
+    <title>Learning Vue</title>
+  </head>
+  <body>
+    <h1>Hello!</h1>
+
+    <div id="app">
+      <p>{{title}} - {{author}} - {{age}}</p>
+      <button v-on:click="age--">Decrease the age</button>
+      <button v-on:click="age++">Increase the age</button>
+      <!-- Directly in the app -->
+      <!-- <div @click="title='something else'">Change Book Title</div> -->
+      <!--  @click shorcut for v-on:click  -->
+
+      <!-- From the component -->
+      <div @click="changeTitle">Change title</div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
